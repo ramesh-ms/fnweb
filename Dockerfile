@@ -26,7 +26,7 @@ RUN \
   apt-get update && \
   apt-get install -y oracle-java7-installer
   apt-get install openjdk-7-jdk
-ENV 
+
 #install ruby
 RUN \curl -sSL https://get.rvm.io | bash -s stable --ruby
 RUN /bin/bash -l -c rvm requirements
