@@ -67,6 +67,7 @@ RUN apt-get install -y libpq-dev
 
 #Install SSH
 RUN apt-get install -y openssh-client
+
 RUN apt-get install -y openssh-server
 
 
