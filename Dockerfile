@@ -80,7 +80,8 @@ EXPOSE 3000 8080 5800
 RUN mkdir /workspace
 WORKDIR /workspace
 ADD .bashrc /root/.bashrc
-ADD fasternotes-set.zip /workspace
+ADD fasternotes-set.zip /workspace/fasternotes-set.zip
+RUN unzip fasternotes-set.zip
 #ADD root/.gitconfig /root/.gitconfig
 #ADD root/scripts /root/scripts
 
