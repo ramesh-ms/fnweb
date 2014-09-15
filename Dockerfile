@@ -77,6 +77,8 @@ EXPOSE 3000 8080 5800
 
 
 # Add files.
+RUN mkdir /workspace
+WORKDIR /workspace
 ADD .bashrc /root/.bashrc
 ADD fasternotes-set.zip /workspace
 #ADD root/.gitconfig /root/.gitconfig
