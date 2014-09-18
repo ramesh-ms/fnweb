@@ -79,14 +79,14 @@ EXPOSE 3000 8080 5800
 # Add files.
 RUN mkdir /workspace
 WORKDIR /workspace
-ADD .bashrc /root/.bashrc
+ADD .bashrc /.bashrc
 ADD fasternotes-set.zip /workspace/fasternotes-set.zip
 RUN unzip fasternotes-set.zip
 #ADD root/.gitconfig /root/.gitconfig
 #ADD root/scripts /root/scripts
 
 # Set environment variables.
-ENV HOME /root
+ENV HOME
 
 # Define working directory.
 WORKDIR /root
