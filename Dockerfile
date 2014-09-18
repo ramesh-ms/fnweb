@@ -37,10 +37,10 @@ ENV PATH /usr/local/rvm/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/s
 #RUN /bin/bash -l -c rvm use 2.1.2 --default
 
 #Install ffmepg
-RUN wget http://johnvansickle.com/ffmpeg/releases/ffmpeg-2.3.3-64bit-static.tar.bz2
-RUN tar xvf ~/ffmpeg-2.3.3-64bit-static.tar.bz2
-RUN cp ~/ffmpeg-2.3.3-64bit-static/ffmpeg ~/bin
-RUN cp ~/ffmpeg-2.3.3-64bit-static/ffprobe ~/bin
+#RUN wget http://johnvansickle.com/ffmpeg/releases/ffmpeg-2.3.3-64bit-static.tar.bz2
+#RUN tar xvf ~/ffmpeg-2.3.3-64bit-static.tar.bz2
+#RUN cp ~/ffmpeg-2.3.3-64bit-static/ffmpeg ~/bin
+#RUN cp ~/ffmpeg-2.3.3-64bit-static/ffprobe ~/bin
 
 #Install imagemagick
 RUN apt-get install -y imagemagick
