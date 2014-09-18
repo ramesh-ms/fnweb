@@ -82,11 +82,13 @@ WORKDIR /workspace
 ADD .bashrc /.bashrc
 ADD fasternotes-set.zip /workspace/fasternotes-set.zip
 RUN unzip fasternotes-set.zip
+
 #ADD root/.gitconfig /root/.gitconfig
 #ADD root/scripts /root/scripts
 
 # Set environment variables.
-ENV HOME
+ENV HOME /root
+RUN export set HOME='/'
 
 # Define working directory.
 WORKDIR /root
