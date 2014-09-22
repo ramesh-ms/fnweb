@@ -94,4 +94,4 @@ RUN export set HOME='/'
 WORKDIR /root
 
 # Define default command.
-CMD ["bash"]
+CMD ["/bin/bash"]
