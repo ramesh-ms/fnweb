@@ -26,6 +26,15 @@ RUN \
   apt-get update && \
   apt-get install -y oracle-java7-installer
   apt-get install openjdk-7-jdk
+  
+  RUN echo 'JAVA_HOME=/usr/lib/jvm/java-7-oracle' >> /etc/profile; \
+    echo 'PATH=$PATH:$JAVA_HOME/bin' >> /etc/profile; \
+    echo 'export JAVA_HOME' >> /etc/profile; \
+    echo 'export PATH' >> /etc/profile
+ENV JAVA_HOME /usr/lib/jvm/java-7-oracle
+ENV JRE_HOME /usr/lib/jvm/java-7-oracle
+ENV PATH $PATH:$JAVA_HOME/bin
+  
 
 #install ruby
 RUN \curl -sSL https://get.rvm.io | bash -s stable --ruby
