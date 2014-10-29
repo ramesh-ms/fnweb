@@ -96,11 +96,11 @@ RUN unzip fasternotes-set.zip
 #ADD root/scripts /root/scripts
 
 # Set environment variables.
-ENV HOME /root
-RUN export set HOME='/'
+ENV HOME  HOME
+
 
 # Define working directory.
-WORKDIR /root
+WORKDIR HOME
 
 # Define default command.
 CMD ["/bin/bash"]
