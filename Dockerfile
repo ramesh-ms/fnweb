@@ -37,7 +37,10 @@ ENV PATH $PATH:$JAVA_HOME/bin
   
 
 #install ruby
-RUN curl -L https://get.rvm.io | bash -s stable --ruby
+RUN apt-get update
+RUN apt-get install wget vim git --assume-yes
+RUN apt-get install build-essential curl --assume-yes
+RUN curl -L https://get.rvm.io | bash -s stable
 RUN /bin/bash -l -c rvm requirements
 RUN /bin/bash -l -c rvm install 2.1.3
 RUN /bin/bash -l -c rvm install jruby
