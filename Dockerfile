@@ -37,7 +37,7 @@ ENV PATH $PATH:$JAVA_HOME/bin
   
 
 #install ruby
-RUN \curl -sSL https://get.rvm.io | bash -s stable --ruby
+RUN curl -L https://get.rvm.io | bash -s stable --ruby
 RUN /bin/bash -l -c rvm requirements
 RUN /bin/bash -l -c rvm install 2.1.3
 RUN /bin/bash -l -c rvm install jruby
