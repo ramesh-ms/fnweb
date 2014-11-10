@@ -100,7 +100,7 @@ RUN unzip fasternotes-set.zip
 #ADD root/scripts /root/scripts
 
 # Set environment variables.
-ENV HOME
+ENV HOME /root
 
 
 # Define working directory.
