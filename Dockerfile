@@ -38,7 +38,7 @@ ENV PATH $PATH:$JAVA_HOME/bin
 
 #install ruby
 RUN apt-get update
-RUN apt-get install git-core curl
+RUN apt-get install -y git-core curl
 RUN apt-get install wget vim git --assume-yes
 RUN apt-get install build-essential curl --assume-yes
 RUN \curl -L https://get.rvm.io | bash -s stable
